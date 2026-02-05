@@ -3,12 +3,11 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 import plotly.express as px
-from pathlib import Path
+
 
 # Carga de datos
-BASE_DIR = Path(__file__).resolve().parent
-DATA_PATH = BASE_DIR.parent / "data" / "finale_dataset"/ "TLC_Monthy_Report_NYC.csv"
-df = pd.read_csv(DATA_PATH)
+
+df = pd.read_csv('data/df.csv')
 
 
 # Configuración de la página
