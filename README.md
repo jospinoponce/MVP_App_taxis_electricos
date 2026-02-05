@@ -1,21 +1,13 @@
 # <h1>Pj_05-003 Desarrollo de un MVP para evaluar la viabilidad de la incorporación de vehículos eléctricos en el servicio de taxis en la ciudad de Nueva York. </h1> 
 
-## **HENRY BOOTCAMP | Proyecto Final**
-<hr>
-
-*El presente proyecto se desarrolla como el proyecto final del Bootcamp de Data Science de [Soy Henry](https://www.soyhenry.com/). Busca analizar la situación del mercado de taxis en New York a través del MVP de una aplicación web.  https://www.youtube.com/watch?v=ewDlLPiMFlo&feature=youtu.be*  
 
 # 1. Introducción
 
-Se lleva a cabo un análisis del sector de transporte público en los taxis amarillos de la ciudad de Nueva York con el fin de evaluar la viabilidad de invertir en tecnologías sostenibles como la implementación de flotas de vehículos eléctricos. Se analizan datos en NYC de los sonidos registrados por el tráfico, la contaminación en el aire, el movimiento de vehículos por zona y los viajes que realizan los taxis en la ciudad para  los 5 Boroughs (distritos) de New York: **Manhattan, Brooklyn, Queens, The Bronx & Staten Island**.<br>
-
-Se integra un modelo de Machine Learning  para estimar tendencias a futuro de los principales indicadores,  un Dashboard para la visualización de los datos y resultados obtenidos en una aplicación en Streamlit denominada [Dataxi](https://lucianolarrea-pf-ds-home-f5yrsh.streamlit.app/). <br>
+Este proyecto evalua la viabilidad de reemplazar los taxis amarillos de Nueva York por una flota de vehículos eléctricos, utilizando datos oficiales de NYC. Se analizan variables como ruido, contaminación, tráfico y viajes de taxis en los cinco Boroughs de la ciudad. Se realizan análisis exploratorios de datos (EDA), para el procesamiento de carga de datos automatizado con pipelines se usa **PySpark**, almacenamiento en **Azure SQL** y los resultados se visualizan en un dashboard interactivo en Streamlit, incorporando un modelo **Forecasting ARIMA** para proyecciones futuras.  <br>
 
 El proyecto se ejecuta bajo metodología ágil Scrum y se desarrolla en cuatro etapas.<br>
 **Etapa 1:** Recopilación de los datos, **Etapa 2:** Creación de base de datos, **Etapa 3:** Análisis Económico, KPIs y **Etapa 4:** Modelo ML. <br>
 
-La gestión del proyecto se desarrolla en:<br>
-*Actividades [Task:](https://trello.com/b/BBq6OTiJ/proyecto-final) Cronograma [Gant:](https://docs.google.com/spreadsheets/d/10gupD91IRV9KfblHfoy6fAw1rV6vu_gw6LNHp0itnfo/edit#gid=1709744959)*
 
 <hr>
 
@@ -43,7 +35,7 @@ La gestión del proyecto se desarrolla en:<br>
 
 Los datos se extraen de fuentes oficiales que proporciona  New York.  [**Taxi & Limousine Commission**](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page) y de los datos abiertos de la ciudad [**Open_Data_NYC**](https://data.cityofnewyork.us/).<br> 
 
-*El **Diccionario de los datos** puede consultarse en [data_dict](https://github.com/jospinoponce/Proyecto_Final_DS_Henry/blob/main/data_dict.md).*
+*El **Diccionario de los datos** puede consultarse en [data_dict](https://github.com/jospinoponce/MVP_App_taxis_electricos/blob/main/data_dict.md).*
 
 <hr>
 
@@ -59,7 +51,7 @@ Al realizar el análisis exploratorio de los datos, se determina que:
 - Los sectores que más viajes registran son el aeropuerto EWR y Manhattan.
 - El borough con la peor calidad de aire, mayor contaminación por ruido y mayor volumen de tráfico vehicular es Manhattan. 
 
- *Los aspectos más importantes de este proceso se pueden consultar en: [ETL](https://github.com/jospinoponce/Proyecto_Final_DS_Henry/tree/main/1.ETL) y el [EDA](https://github.com/jospinoponce/Proyecto_Final_DS_Henry/tree/main/2.EDA).*<br>
+ *Los aspectos más importantes de este proceso se pueden consultar en: [ETL](https://github.com/jospinoponce/MVP_App_taxis_electricos/tree/main/2.EDA).*<br>
 
 <hr>
 
@@ -68,7 +60,6 @@ Al realizar el análisis exploratorio de los datos, se determina que:
 Se genera un informe de los impactos ambientales positivos que lleva la implementación de determinada cantidad de vehículos eléctricos para la ciudad.
 [4.REPORTS](/4.REPORTS). <br>
 
-En el presente video muestra el resultado final del proyecto [Resultado Final](https://youtu.be/ewDlLPiMFlo).
 
 ## 5.1 KPIs 
 
@@ -88,7 +79,7 @@ Se genera un análisis económico con las proyecciones realizadas al sector y pu
 
 Se desarrolla un MVP para una app que contiene tanto el modelo ML como un dashboard de visualización de datos en Power Bi embebidos para generar métricas y los KPIs establecidos en función al número de vehículos eléctricos que el usuario seleccione.<br>
 
-El nombre de la app es **Dataxi** y puede ser consultada en: [Dataxi](https://lucianolarrea-pf-ds-home-f5yrsh.streamlit.app/)<br>
+El nombre de la app es **Dataxi** y puede ser consultada en: [Dataxi](https://dataxi-sj.streamlit.app//)<br>
 
 <img src="src/portada_1.gif" />
 
@@ -108,17 +99,7 @@ El sector de taxis amarillos viene en decrecimiento pre-COVID. La recuperación 
 
 <hr>
 
-*Developed by*
 
-<a href="https://www.linkedin.com/in/franco-jonas-myburg-6095b8255/"><img alt="Franco" title="Connect with Franco" src="https://img.shields.io/badge/Franco Myburg-0077B5?style=flat&logo=Linkedin&logoColor=white"></a> **DATA ENGINEER**
-
-<a href="https://www.linkedin.com/in/ivannagvdc/"><img alt="Ivanna" title="Connect with Ivanna" src="https://img.shields.io/badge/Ivanna Villa-0077B5?style=flat&logo=Linkedin&logoColor=white"></a> **DATA ANALYST**
-
-<a href="https://www.linkedin.com/in/jospinoponce/"><img alt="Jaime" title="Connect with Jaime" src="https://img.shields.io/badge/Jaime Ospino-0077B5?style=flat&logo=Linkedin&logoColor=white"></a> **DATA ENGINEER**
-
-<a href="https://www.linkedin.com/in/takticflow/"><img alt="Luciano" title="Connect with Luciano" src="https://img.shields.io/badge/Luciano Larrea-0077B5?style=flat&logo=Linkedin&logoColor=white"></a> **PROJECT MANAGER & DATA SCIENTIST**
-
-<a href="https://www.linkedin.com/in/royquillca/"><img alt="Roy" title="Connect with Roy" src="https://img.shields.io/badge/Roy Quillca-0077B5?style=flat&logo=Linkedin&logoColor=white"></a> **DATA ENGINEER**
 
 
 
