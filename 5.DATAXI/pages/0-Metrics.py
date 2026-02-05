@@ -4,19 +4,22 @@ import streamlit as st
 import datetime
 import plotly.graph_objs as go
 import plotly.express as px
-# import app.connection.get_data as get_data
 
-# df = pd.read_csv('Proyecto_grupal_DS/luciano/df.csv',index_col=13)
+# Load data 
 df = pd.read_csv('data/df.csv',index_col=13)
+
 # Convertir el índice del dataframe en datetime
 df.index = pd.to_datetime(df.index)
 
 # Dashboard layout
 st.set_page_config(page_title="Dashboard", page_icon=":car:", layout="wide")
+
+
 fleet = st.sidebar.number_input('Fleet Number',1,100000,value=1000)
+
 # Obtener la fecha seleccionada en el date_input
-start_date = datetime.date(2015, 1, 1)  #st.date_input('Start Date',
-end_date = datetime.date(2023, 1, 1)    # st.date_input('End Date',
+start_date = datetime.date(2015, 1, 1)  
+end_date = datetime.date(2023, 1, 1)    
 current_date = datetime.date(2023, 1, 1)
 
 selected_date = st.sidebar.slider("Select a date range:",
@@ -24,7 +27,6 @@ selected_date = st.sidebar.slider("Select a date range:",
                     min_value=start_date,
                     max_value=end_date,
                     format="MMM YYYY",
-                    # step = month,
                     key="date_range")
 selected_date = selected_date.replace(day=1)
 selected_date = pd.to_datetime(selected_date)
@@ -35,6 +37,8 @@ selected_date_pos = df.index.get_loc(selected_date)
 unique_vehicles_value = df[df['license_class']=='Yellow'].loc[selected_date, 'unique_vehicles']
 market_share = fleet / (fleet + unique_vehicles_value)
 market_share_percentage = market_share * 100
+
+
 menu_items = ["Vehicles", "Trips", "Farebox", "Ratios"]
 menu_selection = st.sidebar.radio("Select a page", menu_items)
 colors = {'Yellow': 'Yellow', 'Green': 'Green', 'FHV - High Volume': 'FHVHV','FHV - Black Car':'Black','FHV - Lux Limo':'Lux Limo','FHV - Livery':'Livery'}
@@ -92,7 +96,8 @@ if menu_selection == menu_items[0]:
     yaxis=dict(title='Unique Vehicles'))
     st.plotly_chart(fig, use_container_width=True)
     
-    # df = df[df['license_class']=='Yellow']
+    
+
     unique_drivers_value = df[df['license_class']=='Yellow'].loc[selected_date, 'unique_drivers']
     st.metric('Market Drivers',unique_drivers_value)
     fig = go.Figure()

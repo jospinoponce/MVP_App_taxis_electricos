@@ -56,11 +56,16 @@ plot_1, sp_center ,plot_2 = st.columns((4.5, 0.1, 4.5))
 
 with plot_1:
     fig_count = plot_count_sounds_vehvol(data_v0, borough_option)
-    st.plotly_chart(fig_count, config=dict(displayModeBar=False), use_container_width=True, use_container_height=False)
+    fig_count.update_layout(height=450)
+    st.plotly_chart(fig_count, config=dict(displayModeBar=False), use_container_width=True)
 
-    
 with plot_2:
-    fig_prop = plot_rat_sounds_voltrafic(data_v1, rat_cols, dict_props.get(ratio_option), borough_option)
+    fig_prop = plot_rat_sounds_voltrafic(
+        data_v1,
+        rat_cols,
+        dict_props.get(ratio_option),
+        borough_option
+    )
+    fig_prop.update_layout(height=450)
     st.plotly_chart(fig_prop, config=dict(displayModeBar=False), use_container_width=True)
-
 
