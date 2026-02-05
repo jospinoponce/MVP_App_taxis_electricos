@@ -1,14 +1,20 @@
-# Librerías
+# Librerías 
 import pandas as pd
 import streamlit as st
 from PIL import Image
 import plotly.express as px
+from pathlib import Path
+
+# Carga de datos
+BASE_DIR = Path(__file__).resolve().parent
+DATA_PATH = BASE_DIR.parent / "data" / "finale_dataset"/ "TLC_Monthy_Report_NYC.csv"
+df = pd.read_csv(DATA_PATH)
+
 
 # Configuración de la página
 st.set_page_config(page_title="Dashboard", page_icon=":car:", layout="wide")
 
-# Carga de datos
-df = pd.read_csv("data/TLC_Monthy_Report_NYC.csv")
+
 
 # Sidebar con secciones
 options = ['Home','Goals','Market']
