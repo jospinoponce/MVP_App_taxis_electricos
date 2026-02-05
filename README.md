@@ -51,7 +51,7 @@ Al realizar el análisis exploratorio de los datos, se determina que:
 - Los sectores que más viajes registran son el aeropuerto EWR y Manhattan.
 - El borough con la peor calidad de aire, mayor contaminación por ruido y mayor volumen de tráfico vehicular es Manhattan. 
 
- *Los aspectos más importantes de este proceso se pueden consultar en: [ETL](https://github.com/jospinoponce/MVP_App_taxis_electricos/tree/main/2.EDA).*<br>
+ *Los aspectos más importantes de este proceso se pueden consultar en: [EDA](https://github.com/jospinoponce/MVP_App_taxis_electricos/tree/main/2.EDA) & [ETL](https://github.com/jospinoponce/MVP_App_taxis_electricos/tree/main/1.ETL).*<br>
 
 <hr>
 
