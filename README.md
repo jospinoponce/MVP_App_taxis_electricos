@@ -77,13 +77,13 @@ Se genera un análisis económico con las proyecciones realizadas al sector y pu
 
 ## 5.3 App
 
-Se desarrolla un MVP para una app que contiene tanto el modelo ML como un dashboard de visualización de datos en Power Bi embebidos para generar métricas y los KPIs establecidos en función al número de vehículos eléctricos que el usuario seleccione.<br>
+Se desarrolla un MVP para la app que contiene tanto el modelo ML como un dashboard de visualización de datos en Power Bi para generar métricas y los KPIs establecidos en función al número de vehículos eléctricos que el usuario seleccione.<br>
 
-El nombre de la app es **Dataxi** y puede ser consultada en: [Dataxi](https://dataxi-sj.streamlit.app//)<br>
+La app puede ser consultada en: [Dataxi](https://dataxi-sj.streamlit.app//)<br>
 
 <img src="src/portada_1.gif" />
 
-**Dataxi** le genera al usuario un .pdf descargable con el resumen de las metricas generadas y algunas recomendaciones de inversión que pueden incrementar el rendimiento del capital invertido en un 32%. 
+El MVP  genera   un .pdf descargable con el resumen de las metricas generadas y algunas recomendaciones de inversión que pueden incrementar el rendimiento del capital invertido en un 32%. 
 
 <img src="src/pdf.png" width="350" height="160"/>
 
