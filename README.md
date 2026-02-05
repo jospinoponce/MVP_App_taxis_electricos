@@ -3,7 +3,7 @@
 
 # 1. Introducción
 
-Este proyecto evalua la viabilidad de reemplazar los taxis amarillos de Nueva York por una flota de vehículos eléctricos, utilizando datos oficiales de NYC. Se analizan variables como ruido, contaminación, tráfico y viajes de taxis en los cinco Boroughs de la ciudad. Se realizan análisis exploratorios de datos (EDA), para el procesamiento de carga de datos automatizado con pipelines se usa **PySpark**, almacenamiento en **Azure SQL** y los resultados se visualizan en un dashboard interactivo en Streamlit, incorporando un modelo **Forecasting ARIMA** para proyecciones futuras.  <br>
+Este proyecto evalua la viabilidad de reemplazar los taxis amarillos de Nueva York por una flota de vehículos eléctricos, utilizando datos oficiales de NYC. Se analizan variables como ruido, contaminación, tráfico y viajes de taxis en los cinco Boroughs de la ciudad. Se realizan análisis exploratorios de datos (EDA), para el procesamiento de carga de datos automatizado con pipelines se usa **PySpark**, almacenamiento en **Azure SQL** y los resultados se visualizan como una app interactiva en **Streamlit** con dashboards embebidos de **Power BI**, incorporando un modelo **Forecasting ARIMA** para proyecciones futuras.  <br>
 
 El proyecto se ejecuta bajo metodología ágil Scrum y se desarrolla en cuatro etapas.<br>
 **Etapa 1:** Recopilación de los datos, **Etapa 2:** Creación de base de datos, **Etapa 3:** Análisis Económico, KPIs y **Etapa 4:** Modelo ML. <br>
